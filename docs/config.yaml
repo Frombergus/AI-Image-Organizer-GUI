@@ -1,0 +1,20 @@
+# Default configuration for Image Extract to Category
+model_name: "redule26/huihui_ai_qwen2.5-vl-7b-abliterated:latest"
+
+# Predefined categories (AI classifies into exactly one)
+categories:
+  - birthdays
+  - vacations
+  - family_photos
+  - child_photos
+  - other
+  - nudity
+
+# Processing defaults
+min_size_threshold: 768  # Skip images smaller than WIDTH x HEIGHT
+dry_run: false  # Simulate moves without executing
+remove_videos_folders: false  # Cleanup empty videos/ folders
+
+# Paths (override in app.py or CLI)
+source_dir: "./"  # Example: extracted media root
+output_root: "."  # Flatten categories here

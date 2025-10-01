@@ -1,0 +1,9 @@
+ os
+ tkinter 
+ threading
+ shutil
+ base64
+ io
+ pillow
+ ollama
+ tqdm
